@@ -1,0 +1,117 @@
+Loading workbook: Shree_Shivansh_Stores_Final.xlsm ...
+
+======================================================================
+MIGRATION REPORT
+======================================================================
+
+--- Daily Accounts ---
+  Imported (or would-import):  244
+  Skipped (blank/placeholder): 0
+  Duplicates detected:         0
+  Validation errors:           0
+
+--- Expense Register ---
+  Imported (or would-import):  15
+  Skipped (blank/placeholder): 5
+  Duplicates detected:         0
+  Validation errors:           0
+
+--- PA ---
+  Imported (or would-import):  996
+  Skipped (blank/placeholder): 4
+  Duplicates detected:         40
+  Validation errors:           0
+    ~ Row 148: duplicate of 'TATA SALT'
+    ~ Row 185: duplicate of 'SISTER CORIANDER POWDER 20 GM'
+    ~ Row 186: duplicate of 'SISTER CORIANDER POWDER 250 GM'
+    ~ Row 187: duplicate of 'SISTER CORIANDER POWDER 40 GM'
+    ~ Row 188: duplicate of 'SISTER JEERA POWDER 250 GM'
+    ... and 35 more duplicates
+
+--- PA (auto-created from missing refs) ---
+  Imported (or would-import):  0
+  Skipped (blank/placeholder): 0
+  Duplicates detected:         0
+  Validation errors:           0
+    * 'HAJMOLA IMLI' — auto-created with cost/mrp/sp=0.85 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'DOVE SHAMPOO CONDITIONER SATCHET' — auto-created with cost/mrp/sp=3.75 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'SAVLON ORANGE' — auto-created with cost/mrp/sp=9.00 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'TRESSEMME SHAMPOO CONDITIONER SATCHET' — auto-created with cost/mrp/sp=4.00 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'PATANJALI DISHWASHER BAR 145 GM' — auto-created with cost/mrp/sp=9.17 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'BOROLINE 6GM' — auto-created with cost/mrp/sp=8.85 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'CANDLE 5 INR' — auto-created with cost/mrp/sp=3.00 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'GOOD KNIGHT ANTI-MOSQUITO AGARBATTI' — auto-created with cost/mrp/sp=7.08 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'BHARAT DARSHAN' — auto-created with cost/mrp/sp=40.00 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    * 'CLINIC PLUS EGG PROTEIN' — auto-created with cost/mrp/sp=0.81 (seeded from Purchase Register where available, else 0.00); category set to NEEDS REVIEW — admin must verify real pricing
+    ... and 80 more notes
+
+--- PA (duplicate resolution) ---
+  Imported (or would-import):  0
+  Skipped (blank/placeholder): 0
+  Duplicates detected:         0
+  Validation errors:           0
+    * Row 148 superseded row 147 for 'TATA SALT': kept cost=26/mrp=0/sp=29 (dropped cost=27/mrp=0/sp=29)
+    * Row 185 superseded row 123 for 'SISTER CORIANDER POWDER 20 GM': kept cost=5.384615384615385/mrp=9/sp=9 (dropped cost=5.38/mrp=0/sp=9)
+    * Row 186 superseded row 124 for 'SISTER CORIANDER POWDER 250 GM': kept cost=70/mrp=90/sp=90 (dropped cost=70/mrp=90/sp=88)
+    * Row 187 superseded row 125 for 'SISTER CORIANDER POWDER 40 GM': kept cost=11.2/mrp=19/sp=19 (dropped cost=11.2/mrp=0/sp=19)
+    * Row 188 superseded row 126 for 'SISTER JEERA POWDER 250 GM': kept cost=130/mrp=165/sp=165 (dropped cost=130/mrp=160/sp=160)
+    * Row 189 superseded row 127 for 'SISTER RED CHILLI POWDER 100 GM': kept cost=47/mrp=60/sp=58 (dropped cost=47/mrp=0/sp=58)
+    * Row 190 superseded row 128 for 'SISTER RED CHILLI POWDER 20 GM': kept cost=9.038461538461538/mrp=13/sp=13 (dropped cost=9.03/mrp=0/sp=13.5)
+    * Row 191 superseded row 129 for 'SISTER RED CHILLI POWDER 250 GM': kept cost=117.5/mrp=145/sp=140 (dropped cost=117.5/mrp=0/sp=140)
+    * Row 192 superseded row 130 for 'SISTER RED CHILLI POWDER 40 GM': kept cost=18.8/mrp=25/sp=25 (dropped cost=18.8/mrp=0/sp=25)
+    * Row 193 superseded row 131 for 'SISTER TURMERIC POWDER 100 GM': kept cost=27/mrp=38/sp=35 (dropped cost=27/mrp=38/sp=35)
+    ... and 30 more notes
+
+--- Purchase Register ---
+  Imported (or would-import):  1043
+  Skipped (blank/placeholder): 0
+  Duplicates detected:         0
+  Validation errors:           0
+
+--- Sales Register ---
+  Imported (or would-import):  5598
+  Skipped (blank/placeholder): 313
+  Duplicates detected:         0
+  Validation errors:           0
+  Excluded after manual review:   4
+    x Row 6381: item '1KG NESTLE EVERYDAY' has no qty/price and Amount=0 — abandoned/incomplete entry, no transaction to recover; excluded after manual review
+    x Row 6386: item '1KG SURF EXCEL' has no qty/price and Amount=0 — abandoned/incomplete entry, no transaction to recover; excluded after manual review
+    x Row 6387: item 'soap' has no qty/price and Amount=0 — abandoned/incomplete entry, no transaction to recover; excluded after manual review
+    x Row 6389: item 'NAKUL DANA SMALL LOT 1' has no qty/price and Amount=0 — abandoned/incomplete entry, no transaction to recover; excluded after manual review
+
+--- Sales Register (credit column corrected) ---
+  Imported (or would-import):  0
+  Skipped (blank/placeholder): 0
+  Duplicates detected:         0
+  Validation errors:           0
+    * Row 4008: item 'MODERN DALMOOT 10 INR LOT 3' had IF CREDIT='credit' with Payment Mode='CASH' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4074: item '60 INR ELLORA PANEER 200 GM LOT 1' had IF CREDIT='credit' with Payment Mode='UPI' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4075: item 'LOOSE KABLI CHANA LOT 1' had IF CREDIT='credit' with Payment Mode='UPI' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4119: item 'LAYS CHIPS LOT 3' had IF CREDIT='credit' with Payment Mode='CASH' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4140: item '15 INR KNORR SOUP LOT 1' had IF CREDIT='credit' with Payment Mode='CASH' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4141: item '5 INR CAKE LOT 3' had IF CREDIT='credit' with Payment Mode='CASH' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4142: item '5 INR CHOCOS LOT 2' had IF CREDIT='credit' with Payment Mode='CASH' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4143: item '10 INR WAI WAI KOREAN HOT AND SPICY LOT 2' had IF CREDIT='credit' with Payment Mode='CASH' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4160: item '10 INR BISCUITS LOT 6' had IF CREDIT='credit' with Payment Mode='CASH' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    * Row 4175: item '5 INR HALDIRAM LOT 2' had IF CREDIT='credit' with Payment Mode='CASH' — reclassified to payment_mode=CREDIT (unambiguous data-entry slip)
+    ... and 11 more notes
+
+--- Stock Register ---
+  Imported (or would-import):  1020
+  Skipped (blank/placeholder): 190
+  Duplicates detected:         0
+  Validation errors:           0
+
+----------------------------------------------------------------------
+TOTAL rows ready to import: 8916
+TOTAL validation errors:    0
+TOTAL duplicates flagged:   40
+TOTAL excluded (reviewed):  4
+======================================================================
+
+Full structured payload written to migration_report.json
+(Row-level counts above are also mirrored in migration_report_summary.txt)
+
+DRY RUN COMPLETE. No data was written to any database.
+Review the errors/duplicates above, fix the source workbook or this
+script's mapping rules, then re-run with --commit once satisfied.
