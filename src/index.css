@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-cream text-darkest antialiased;
+  }
+
+  /* Number inputs: hide the spinner arrows so cart qty/price fields look clean
+     on mobile without losing the numeric keypad. */
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+@layer utilities {
+  /* Utility for admin data tables that need to scroll horizontally on
+     narrow screens without breaking the page layout. */
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-amber/30 rounded-full;
+  }
+}
+
+/* Printable bill view: strip everything except the bill card itself. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #root,
+  #root * {
+    visibility: visible;
+  }
+  nav,
+  header,
+  .print\:hidden {
+    display: none !important;
+  }
+}
