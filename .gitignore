@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Env files — never commit real Supabase keys or service_role secrets
+.env
+.env.local
+.env.*.local
+
+# TypeScript incremental build info
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# Editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (migration script)
+scripts/__pycache__/
+scripts/*.pyc
+scripts/.venv/
+scripts/venv/
+
+# Test coverage
+coverage/
