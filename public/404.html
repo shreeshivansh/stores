@@ -1,0 +1,54 @@
+<!doctype html>
+<!--
+  GitHub Pages SPA fallback.
+
+  GitHub Pages serves this file for any URL that doesn't match a real file
+  (e.g. a deep link to /shivansh-stores/admin/stock refreshed directly, or
+  opened fresh from a bookmark/WhatsApp link). React Router only runs once
+  index.html has loaded, so without this file those URLs would just show
+  GitHub's plain 404 page.
+
+  Fix: encode the intended path into a query string and redirect to the
+  site root, then a small script in index.html (see main.tsx) decodes it
+  and calls history.replaceState so React Router picks up the right route.
+  This is the standard "spa-github-pages" pattern (rafgraph/spa-github-pages).
+
+  pathSegmentsToKeep = 1 because this is a GitHub Pages *project* site
+  (https://username.github.io/shivansh-stores/...) — the first path segment
+  ("shivansh-stores") is not part of the app's own route and must be kept
+  when rebuilding the redirect target. If you deploy to a custom domain or a
+  user/org root site instead (VITE_BASE_PATH=/), change this to 0.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Shree Shivansh Stores</title>
+    <script>
+      (function () {
+        var pathSegmentsToKeep = 1;
+        var loc = window.location;
+        var pathParts = loc.pathname.split('/').slice(1);
+        var kept = pathParts.slice(0, pathSegmentsToKeep).join('/');
+        var rest = pathParts.slice(pathSegmentsToKeep).join('/');
+
+        var redirectUrl =
+          loc.protocol +
+          '//' +
+          loc.hostname +
+          (loc.port ? ':' + loc.port : '') +
+          '/' +
+          (kept ? kept + '/' : '') +
+          '?spa_redirect=/' +
+          rest.replace(/&/g, '~and~') +
+          (loc.search ? '&' + loc.search.slice(1).replace(/&/g, '~and~') : '') +
+          loc.hash;
+
+        loc.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting…
+  </body>
+</html>
